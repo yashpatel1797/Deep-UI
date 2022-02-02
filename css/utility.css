@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.fn-weight-xs {
+  font-weight: 300;
+}
+.fn-weight-s {
+  font-weight: 400;
+}
+.fn-weight-m {
+  font-weight: 600;
+}
+.fn-weight-l {
+  font-weight: 700;
+}
+.fn-weight-xl {
+  font-weight: 900;
+}
+/* font size */
+.fn-size-xs {
+  font-size: 0.5rem;
+}
+.fn-size-s {
+  font-size: 1rem;
+}
+.fn-size-m {
+  font-size: 2rem;
+}
+.fn-size-l {
+  font-size: 3rem;
+}
+.fn-size-xl {
+  font-size: 5rem;
+}
+/* elements */
+.btn {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1.125rem 1.875rem;
+  margin: 0.25rem;
+}
+.btn:hover {
+  opacity: 0.8;
+  transition: opacity 0.25s ease-in;
+}

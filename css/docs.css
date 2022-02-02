@@ -1,0 +1,30 @@
+.components {
+  margin: 5rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header header"
+    "sidebar components components components components"
+    "sidebar components components components components"
+    "sidebar components components components components"
+    "footer footer footer footer footer";
+}
+footer-doc {
+  grid-area: footer;
+}
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.components {
+  grid-area: components;
+  top: 4rem;
+  position: relative;
+}
+html {
+  scroll-behavior: smooth;
+}
