@@ -1,0 +1,14 @@
+.input-field {
+  background-color: var(--color-grey-light-1);
+  color: var(--color-grey-dark-1);
+  display: block;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  border: none;
+  padding: 1.125rem 1.875rem;
+  margin-top: 0.5rem;
+  width: 50%;
+}
+.input-error {
+  border: 2px solid var(--color-alert-danger);
+}
