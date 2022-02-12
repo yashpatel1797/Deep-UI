@@ -1,3 +1,18 @@
+fetch("header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header-doc").innerHTML = data;
+  });
+
+  fetch("/footer.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footer-doc").innerHTML = data;
+  });
 fetch("./components/Alert/alert.html")
   .then(response => {
     return response.text()
@@ -104,18 +119,4 @@ fetch("./components/Avatar/avatar.html")
   .then(data => {
     document.querySelector("slider").innerHTML = data;
   });
-  fetch("header.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("header-doc").innerHTML = data;
-  });
-
-  fetch("/footer.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("footer-doc").innerHTML = data;
-  });
+  
