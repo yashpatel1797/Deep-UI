@@ -31,10 +31,13 @@
 .btn-icon {
   display: flex;
 }
-.btn-icon_center {
+.btn-icon-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.btn-icon-center > span {
+  margin-right: 1rem;
 }
 .btn-icon-only:hover {
   color: var(--color-primary);
@@ -57,6 +60,11 @@
   border-radius: 50%;
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: 0.7rem;
+  width: 5rem;
+  height: 5rem;
   cursor: pointer;
+  border: none;
+}
+.btn-border {
+  border: 2px solid var(--color-primary);
 }
