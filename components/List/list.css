@@ -1,0 +1,16 @@
+.list-spaced {
+  list-style: none;
+}
+.list-stacked {
+  list-style: none;
+}
+.list-container {
+  display: flex;
+  gap: 8rem;
+}
+.list-label > input {
+  margin-right: 1rem;
+}
+.list-card {
+  width: auto;
+}

@@ -1,0 +1,6 @@
+.text-grey {
+  color: var(--color-grey-dark-2);
+}
+.text-center {
+  text-align: center;
+}
