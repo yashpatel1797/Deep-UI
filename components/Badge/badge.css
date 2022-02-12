@@ -27,23 +27,23 @@
   background-color: var(--color-grey-dark-1);
 }
 .avatar-notification {
-  height: 1.75rem;
-  width: 1.75rem;
+  height: 2rem;
+  width: 2rem;
   display: flex;
   bottom: 5rem;
-  color: var(--color-grey-dark-3);
-  background-color: var(--color-primary-light);
+  color: var(--color-grey-dark-1);
+  background-color: var(--color-primary);
   left: 4.2rem;
   justify-content: center;
   align-items: center;
 }
 .icon-notification {
-  height: 1.75rem;
-  width: 1.75rem;
+  height: 2rem;
+  width: 2rem;
   display: flex;
   bottom: 4rem;
-  color: var(--color-grey-dark-3);
-  background-color: var(--color-primary-light);
+  color: var(--color-grey-dark-1);
+  background-color: var(--color-primary);
   left: 3.3rem;
   justify-content: center;
   align-items: center;

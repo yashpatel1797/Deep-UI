@@ -13,11 +13,11 @@
   border-radius: 0.3rem;
   width: 100%;
 }
-.avatar__round-border {
+.avatar-round-border {
   border-radius: 0.5rem;
 }
 
-.avatar__circle {
+.avatar-circle {
   border-radius: 50%;
 }
 .avatar-image {
