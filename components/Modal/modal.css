@@ -22,7 +22,7 @@
   height: 50vh;
   overflow: auto;
   display: flex;
-  padding: 15px 30px;
+  padding: 1.5rem 3rem;
   box-sizing: border-box;
   justify-content: space-evenly;
   flex-direction: column;

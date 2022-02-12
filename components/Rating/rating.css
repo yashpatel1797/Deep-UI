@@ -1,7 +1,6 @@
 .rating {
   cursor: pointer;
   color: var(--color-alert-warning);
-  /* background-color: var(--color-alert-danger); */
 }
 .no-rating {
   color: var(--color-alert-warning);

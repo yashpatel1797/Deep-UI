@@ -13,6 +13,11 @@
   grid-template-columns: 50% 50%;
   background-color: var(--color-grey-light-1);
 }
+.grid-20-80 {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: var(--color-grey-light-1);
+}
 .btn-container {
   display: flex;
 }
