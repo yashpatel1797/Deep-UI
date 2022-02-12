@@ -4,38 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Yash Patel" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Header</title>
     <link rel="stylesheet" href="/css/header.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
-    />
   </head>
   <body>
-    <nav class="navigation">
+    <nav class="navigation" id="my-nav-bar">
       <div class="heading">
+        <div id="my-burger-menu" class="burger nav-section-items">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
         <a class="title" href="./index.html">Deep-UI</a>
         <a class="title" href="./docs.html">Docs</a>
       </div>
       <div>
         <button class="btn">
-          <a href="" class="nav-icon-link link-no-style">
+          <a
+            href="https://github.com/yashpatel1797/Deep-UI"
+            class="nav-icon-link link-no-style"
+          >
             <span class="nav-icon">
               <i class="fab fa-github" aria-hidden="true"></i>
             </span>
           </a>
         </button>
         <button class="btn">
-          <a href="" class="nav-icon-link link-no-style">
+          <a
+            href="https://twitter.com/yesgpatel"
+            class="nav-icon-link link-no-style"
+          >
             <span class="nav-icon">
               <i class="fab fa-twitter" aria-hidden="true"></i>
             </span>
           </a>
         </button>
         <button class="btn">
-          <a href="" class="nav-icon-link link-no-style">
+          <a
+            href="https://www.linkedin.com/in/yashpatel797/"
+            class="nav-icon-link link-no-style"
+          >
             <span class="nav-icon">
               <i class="fab fa-linkedin-in" aria-hidden="true"></i>
             </span>
@@ -43,5 +53,6 @@
         </button>
       </div>
     </nav>
+    <script src="./js/header.js"></script>
   </body>
 </html>

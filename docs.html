@@ -1,29 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lan-="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Yash Patel" />
-    <link rel="stylesheet" href="/css/docs.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/docs.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
     <link rel="stylesheet" href="/css/main.css" />
-    <title>Documentation</title>
+
+    <title>Deep-UI | Documentation</title>
   </head>
   <body>
     <div class="grid-container">
       <header-doc class="header"></header-doc>
-
-      <sidebar class="sidebar"></sidebar>
+      <div class="sidebar-main">
+        <div class="pos sidebar shadow-bottom" id="my-side-bar">
+          <div class="nav-heading nav-opening-button">
+            <h2 class="nav-heading-title">Components</h2>
+            <span class="sidebar-arrow"
+              ><i class="h5 fas fa-chevron-down"></i
+            ></span>
+          </div>
+          <ul class="nav-links">
+            <li class="nav-link-item active"><a href="#alert">Alert</a></li>
+            <li class="nav-link-item"><a href="#avatar">Avatar</a></li>
+            <li class="nav-link-item"><a href="#badge">Badge</a></li>
+            <li class="nav-link-item"><a href="#button-com">Button</a></li>
+            <li class="nav-link-item"><a href="#card">Card</a></li>
+            <li class="nav-link-item"><a href="#image-com">Image</a></li>
+            <li class="nav-link-item"><a href="#input-com">Input</a></li>
+            <li class="nav-link-item"><a href="#ṛating">Rating</a></li>
+            <li class="nav-link-item"><a href="#grid">Grid Simplified</a></li>
+            <li class="nav-link-item"><a href="#modal">Modal </a></li>
+            <li class="nav-link-item"><a href="#toast">Toast </a></li>
+            <li class="nav-link-item"><a href="#list">List </a></li>
+            <li class="nav-link-item">
+              <a href="#text-utilities">Text Utilities </a>
+            </li>
+            <li class="nav-link-item"><a href="#navigation">Navigation </a></li>
+            <li class="nav-link-item"><a href="#slider">Slider </a></li>
+            <li class="nav-link-item"><a href="#chip">Chip</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="components">
         <alert id="alert"></alert>
+        <h3>Alert close Demo</h3>
+        <div class="alert-demo">
+          <div class="alert alert-outline alert-success" id="alert-close">
+            <span class="material-icons alert-icon"> check_circle </span>
+            <span class="alert-name alert-success">Alert Success</span>
+            <button class="btn" id="alert-close-btn">
+              <span class="material-icons"> cancel </span>
+            </button>
+          </div>
+          <button class="btn btn-solid" id="reset-alert">Reset</button>
+        </div>
+        <hr />
         <avatar id="avatar"></avatar>
+        <hr />
         <badge id="badge"></badge>
+        <hr />
         <button-com id="button-com"></button-com>
+        <hr />
         <card id="card"></card>
+        <hr />
         <image-com id="image-com"></image-com>
+        <hr />
         <input-com id="input-com"></input-com>
+        <hr />
+        <rating id="rating"></rating>
+        <hr />
+        <grid id="grid"></grid>
+        <hr />
+        <modal id="modal"></modal>
+        <h3>Modal demo</h3>
+        <button class="btn btn-solid" id="modal-demo-btn">Click here</button>
+        <div class="modal-container" id="modal-demo">
+          <div class="dialog" id="popup-alert">
+            <span class="modal-title fn-size-l">Confirmation</span>
+            <div class="modal-description fn-size-m">
+              Are you sure you want to cancel your order? This action can not be
+              undone.
+            </div>
+            <footer class="modal-footer">
+              <button class="btn btn-solid modal-close-btn btn-border">
+                Ok
+              </button>
+              <button class="btn btn-outline modal-cancel-btn">Cancel</button>
+            </footer>
+          </div>
+        </div>
+        <hr />
+        <toast id="toast"></toast>
+        <h3>Toast demo</h3>
+        <button class="btn btn-solid" id="toast-demo-btn">Click here</button>
+        <div class="toast top-corner" id="toast-demo">
+          <div class="toast-container">
+            <div class="toast-text fn-size-s">This is toast.</div>
+            <div class="btn-view">
+              <button class="btn btn-ghost toast-undo-btn">Undo</button>
+              <button class="btn toast-close-btn">
+                <span class="material-icons btn-icon-only"> cancel </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <list id="list"></list>
+        <hr />
+        <text-utilities id="text-utilities"></text-utilities>
+        <hr />
+        <navigation id="navigation"></navigation>
+
+        <slider class="slider"></slider>
+        <hr />
+        <div id="chip">
+          <h1>Chip</h1>
+          <h2>Chip with close button</h2>
+          <div class="container">
+            <div class="chip">
+              <span class="material-icons currency"> attach_money </span>
+              <div class="chip-content">Dollars</div>
+
+              <span class="material-icons btn-close"> close </span>
+            </div>
+            <div class="chip">
+              <span class="material-icons currency"> currency_pound </span>
+              <div class="chip-content">Pounds</div>
+              <span class="material-icons btn-close"> close </span>
+            </div>
+            <div class="chip">
+              <span class="material-icons currency"> currency_rupee </span>
+              <div class="chip-content">Rupee</div>
+              <span class="material-icons btn-close"> close </span>
+            </div>
+            <div class="chip">
+              <span class="material-icons currency"> currency_yen </span>
+              <div class="chip-content">Yen</div>
+              <span class="material-icons btn-close"> close </span>
+            </div>
+            <div class="chip">
+              <span class="material-icons currency"> euro </span>
+              <div class="chip-content">Euro</div>
+              <span class="material-icons btn-close"> close </span>
+            </div>
+          </div>
+          <h2>Chip with input</h2>
+          <div class="container inputContainer">
+            <div class="chipContainer chip">
+              <input
+                type="text"
+                placeholder="Enter value here"
+                class="chip chip-content"
+                id="inputChip"
+              />
+            </div>
+          </div>
+          <h2>Chip with drag and drop</h2>
+          <div class="container drag-drop">
+            <div class="chip draggable" draggable="true">
+              <span class="material-icons currency"> attach_money </span>
+              <div class="chip-content">Dollars</div>
+
+              <span class="material-icons btn-close"> close </span>
+            </div>
+            <div class="chip draggable" draggable="true">
+              <span class="material-icons currency"> currency_pound </span>
+              <div class="chip-content">Pounds</div>
+              <span class="material-icons btn-close"> close </span>
+            </div>
+            <div class="chip draggable" draggable="true">
+              <span class="material-icons currency"> currency_rupee </span>
+              <div class="chip-content">Rupee</div>
+              <span class="material-icons btn-close"> close </span>
+            </div>
+            <div class="chip draggable" draggable="true">
+              <span class="material-icons currency"> currency_yen </span>
+              <div class="chip-content">Yen</div>
+              <span class="material-icons btn-close"> close </span>
+            </div>
+            <div class="chip draggable" draggable="true">
+              <span class="material-icons currency"> euro </span>
+              <div class="chip-content">Euro</div>
+              <span class="material-icons btn-close"> close </span>
+            </div>
+          </div>
+        </div>
+        <div class="code-display">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=theme%3Awbo0i8md7y&wt=none&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=124%25&si=false&es=2x&wm=false&code=%253C%21--%2520Chip%2520with%2520close%2520button--%253E%250A%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253C%21--%2520create%2520copy%25203%2520times%2520--%253E%250A%2520%2520%253Cdiv%2520class%253D%2522chip%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520currency%2522%253E%2520attach_money%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522chip-content%2522%253EDollars%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520btn-close%2522%253E%2520close%2520%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Chip%2520with%2520input%2520--%253E%250A%253Cdiv%2520class%253D%2522container%2520inputContainer%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522chipContainer%2520chip%2522%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520value%2520here%2522%250A%2520%2520%2520%2520%2520%2520class%253D%2522chip%2520chip-content%2522%250A%2520%2520%2520%2520%2520%2520id%253D%2522inputChip%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%21--%2520Chip%2520with%2520drag%2520and%2520drop%2520--%253E%250A%253Cdiv%2520class%253D%2522container%2520drag-drop%2522%253E%250A%2520%2520%253C%21--%2520create%2520copy%25203%2520times%2520--%253E%250A%2520%2520%253Cdiv%2520class%253D%2522chip%2520draggable%2522%2520draggable%253D%2522true%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520currency%2522%253E%2520attach_money%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522chip-content%2522%253EDollars%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520btn-close%2522%253E%2520close%2520%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            sandbox="allow-scripts allow-same-origin"
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+        <footer-doc></footer-doc>
       </div>
-      <footer-doc></footer-doc>
     </div>
+    <script src="js/redirection.js"></script>
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/chip.js"></script>
+    <script src="./js/alert.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
-  <script src="js/redirection.js"></script>
 </html>
