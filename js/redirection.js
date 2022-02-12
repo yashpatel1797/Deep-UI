@@ -1,25 +1,4 @@
-fetch("header.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("header-doc").innerHTML = data;
-  });
-  fetch("/sidebar.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("sidebar").innerHTML = data;
-  });
-  fetch("/footer.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("footer-doc").innerHTML = data;
-  });
-  fetch("./components/Alert/alert.html")
+fetch("./components/Alert/alert.html")
   .then(response => {
     return response.text()
   })
@@ -69,4 +48,74 @@ fetch("./components/Avatar/avatar.html")
   .then(data => {
     document.querySelector("input-com").innerHTML = data;
   });
-  
+  fetch("./components/Rating/rating.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("rating").innerHTML = data;
+  });
+  fetch("./components/Grid/grid.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("grid").innerHTML = data;
+  });
+  fetch("./components/Modal/modal.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("modal").innerHTML = data;
+  });
+  fetch("./components/Toast/toast.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("toast").innerHTML = data;
+  });
+  fetch("./components/List/list.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("list").innerHTML = data;
+  });
+  fetch("./components/Text-Utilities/text-utilities.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("text-utilities").innerHTML = data;
+  });
+  fetch("./components/Navigation/navigation.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("navigation").innerHTML = data;
+  });
+  fetch("./components/Slider/slider.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("slider").innerHTML = data;
+  });
+  fetch("header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header-doc").innerHTML = data;
+  });
+
+  fetch("/footer.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footer-doc").innerHTML = data;
+  });
