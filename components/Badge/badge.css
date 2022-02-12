@@ -1,0 +1,50 @@
+.badge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  justify-content: center;
+}
+.badge > div {
+  position: relative;
+}
+.num {
+  position: absolute;
+  border: var(--color-white) solid 2px;
+  border-radius: 50%;
+  display: inline-block;
+  bottom: 1.1rem;
+  padding: 0.6rem;
+  left: 4.6rem;
+}
+.avatar-online {
+  background-color: var(--color-primary-dark);
+}
+.avatar-away {
+  background-color: var(--color-yellow);
+}
+.avatar-offline {
+  background-color: var(--color-grey-dark-1);
+}
+.avatar-notification {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  bottom: 5rem;
+  color: var(--color-grey-dark-1);
+  background-color: var(--color-primary);
+  left: 4.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.icon-notification {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  bottom: 4rem;
+  color: var(--color-grey-dark-1);
+  background-color: var(--color-primary);
+  left: 3.3rem;
+  justify-content: center;
+  align-items: center;
+}
