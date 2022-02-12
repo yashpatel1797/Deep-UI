@@ -1,0 +1,8 @@
+.rating {
+  cursor: pointer;
+  color: var(--color-alert-warning);
+}
+.no-rating {
+  color: var(--color-alert-warning);
+  cursor: pointer;
+}
