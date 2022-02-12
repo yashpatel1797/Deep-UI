@@ -1,5 +1,6 @@
 .components {
   margin: 5rem;
+  display: block;
 }
 .grid-container {
   display: grid;
@@ -27,4 +28,39 @@ footer-doc {
 }
 html {
   scroll-behavior: smooth;
+}
+.code-display {
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 30rem;
+  padding: 1rem 0;
+  margin: 2rem 0;
+  overflow: auto;
+}
+.code-display iframe {
+  width: inherit;
+  border: 0;
+  padding: 0;
+  transform: scale(1);
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .components {
+    padding: 1rem 1.625rem;
+  }
+
+  .grid-container {
+    display: block;
+  }
+}
+
+#reset-alert,
+#toast-demo,
+#modal-demo {
+  display: none;
+}
+.top-corner {
+  position: fixed;
+  top: 10rem;
+  right: 1rem;
 }
