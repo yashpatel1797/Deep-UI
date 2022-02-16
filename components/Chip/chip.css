@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 4rem;
+  align-content: flex-start;
+}
+
+.chip {
+  background-color: var(--color-grey-light-3);
+
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  margin: 3rem;
+  justify-content: center;
+}
+.currency {
+  background-color: var(--color-primary-light);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.chip-content {
+  font-size: 2rem;
+  margin-left: 0.4rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.btn-close {
+  margin: 0.5rem;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+.btn-close:hover {
+  background-color: var(--color-primary-light);
+  cursor: pointer;
+}
+.drag-drop {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.drag-drop .chip {
+  margin: 1rem;
+  padding: 2rem;
+}
+.draggable {
+  cursor: move;
+}
