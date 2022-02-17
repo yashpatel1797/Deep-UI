@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/docs.css" />
   </head>
   <body>
     <div class="container-ind">
@@ -36,19 +37,23 @@
         <div class="text-intro">
           <h1>Installation</h1>
           <p>
-            Copy and paste the code in the head tag of your html document. So
-            that you can style your components by just adding class names to
-            your html elements.
+            Copy and paste the code in the head tag of your html document or
+            import in css file. So that you can style your components by just
+            adding class names to your html elements.
           </p>
           <button class="btn btn-solid">
             <a href="docs.html" class="btn-solid-text">Documentaion</a>
           </button>
         </div>
         <div class="display-flex vertical-middle">
-          <div
-            class="code-snippet-display"
-            style="border: 1px solid var(--primary-color)"
-          ></div>
+          <div class="code-display">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=theme%3Awbo0i8md7y&wt=none&l=auto&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=124%25&si=false&es=2x&wm=false&code=%253C%21--%2520Link%2520for%2520HTML%2520file%2520--%253E%250A%250A%253Clink%2520href%253D%2522https%253A%252F%252Fdeepui.netlify.app%252Fcss%252Fmain.css%2522%2520rel%253D%2522stylesheet%2522%2520%252F%253E%250A%250A%253C%21--%2520To%2520import%2520in%2520CSS%2520file%2520--%253E%250A%250A%2540import%2520url%28%2522https%253A%252F%252Fdeepui.netlify.app%252Fcss%252Fmain.css%2522%29%253B%250A"
+              sandbox="allow-scripts allow-same-origin"
+              loading="lazy"
+            >
+            </iframe>
+          </div>
         </div>
       </div>
       <footer-doc></footer-doc>

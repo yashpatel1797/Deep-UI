@@ -64,3 +64,8 @@ p {
 .btn-solid-text {
   color: var(--color-white);
 }
+@media screen and (max-width: 800px) {
+  .grid-layout {
+    grid-template-columns: 100%;
+  }
+}
