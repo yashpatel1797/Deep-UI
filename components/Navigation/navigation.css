@@ -1,7 +1,7 @@
 .nav-bar {
   display: flex;
   align-items: center;
-  background-color: var(--color-yellow);
+  background-color: var(--color-grey-light-1);
 }
 .nav-section {
   margin: 0rem auto 0rem 4rem;
@@ -26,12 +26,12 @@
 }
 .search-input {
   border: none;
-  padding: 0.7rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 10rem;
   width: 65%;
   transition: all 0.2s;
   color: var(--color-grey-dark-3);
-  margin-right: -2.5rem;
+  margin-right: -5.5rem;
   background-color: var(--color-grey-light-3);
 }
 .search-input:focus {
@@ -41,7 +41,7 @@
 }
 
 .search-input:focus + .btn-search {
-  color: var(--color-white);
+  color: var(--color-primary-light);
 }
 .nav-user {
   display: flex;
