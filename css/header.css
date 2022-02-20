@@ -51,3 +51,38 @@
     font-size: inherit;
   }
 }
+.nav-hamburger {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .nav-user {
+    display: none;
+  }
+  .nav-hamburger {
+    display: block;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .active .nav-user {
+    display: flex;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-grey-light-2);
+    padding: 1rem;
+    height: 100vh;
+    overflow: auto;
+    flex-direction: column;
+    z-index: 20;
+  }
+  .active .burger {
+    position: fixed;
+  }
+  .nav-bar {
+    justify-content: space-around;
+  }
+  .sidebar {
+    z-index: 8;
+  }
+}
