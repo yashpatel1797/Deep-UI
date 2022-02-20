@@ -89,7 +89,7 @@
   }
   .active .nav-user {
     display: block;
-    width: 50%;
+    width: 100%;
     background-color: var(--color-grey-light-2);
     padding: 1rem;
     overflow: auto;
