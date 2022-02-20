@@ -77,3 +77,33 @@
     padding: 2rem 3rem;
   }
 }
+.nav-hamburger {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .nav-user {
+    display: none;
+  }
+  .nav-hamburger {
+    display: block;
+  }
+  .active .nav-user {
+    display: block;
+    width: 50%;
+    background-color: var(--color-grey-light-2);
+    padding: 1rem;
+    overflow: auto;
+  }
+  .nav-user {
+    flex-direction: column;
+  }
+  .active .burger {
+    position: fixed;
+  }
+  .nav-user-btn {
+    flex-direction: row;
+  }
+  .nav-bar-ham {
+    justify-content: space-around;
+  }
+}
