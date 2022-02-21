@@ -27,6 +27,21 @@
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   --line: 1px solid var(--color-grey-light-2);
 }
+.dark-theme {
+  color: #a0aec0;
+  background-color: #2b2f3d;
+}
+.dark-theme .navigation {
+  color: #a0aec0;
+  background-color: #212726;
+  background-color: #434047;
+
+  /* background-color: #2c2633; */
+}
+.dark-theme .sidebar-main {
+  color: #a0aec0;
+  background-color: #2c2633;
+}
 *,
 *::before,
 *::after {
