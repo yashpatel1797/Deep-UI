@@ -59,7 +59,7 @@
     display: none;
   }
   .nav-hamburger {
-    display: block;
+    display: flex;
     font-size: 2rem;
     padding: 0.5rem;
   }
@@ -84,5 +84,8 @@
   }
   .sidebar {
     z-index: 8;
+  }
+  .navigation {
+    padding: 1rem 5rem;
   }
 }
